@@ -16,7 +16,7 @@ co(function*() {
   var conn;
   try {
 	//getConnection
-	conn = yield poo.getConnection();
+	conn = yield pool.getConnection();
 	yield conn.beginTransaction();
 	//....
 	yield conn.commit();
